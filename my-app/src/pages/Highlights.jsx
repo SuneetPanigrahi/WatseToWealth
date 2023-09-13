@@ -13,48 +13,108 @@ const Highlights = () => {
         display={"grid"}
         alignItems={"center"}
         justifyContent={"center"}
-        gridTemplateColumns={"repeat(3 ,1fr)"}
+        gridTemplateColumns={{
+          sm: "repeat(1 ,1fr)",
+          md: "repeat(2 ,1fr)",
+          lg: "repeat(3 ,1fr)",
+        }}
         gap={10}
-        mt={5}
-        boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+        mt={10}
         p={10}
         borderRadius={10}
-
       >
-        <Text fontSize={"2xl"}>
-          <strong>800+</strong> technologies evaluated
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>8</strong> demonstrated on ground
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>2</strong> open dumpsites converted into waste processing
-          sites
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>3000+ tons of waste</strong>
-          removed from two open drains
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong> 150+ </strong>
-          technologies displayed on portal
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>3000+ tons</strong>
-          of waste removed from two open drains
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>64+</strong>
-          policies & guidelines on portal
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>3.1 lakh+</strong>
-          citizens sensitized in waste management
-        </Text>
-        <Text fontSize={"2xl"}>
-          <strong>450 SSF</strong>
-          fellows engaged across the country
-        </Text>
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid orange"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>800+</strong> technologies evaluated
+          </Text>
+        </Box>
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid green"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>8</strong> demonstrated on ground
+          </Text>
+        </Box>
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid orange"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>2</strong> open dumpsites converted into waste processing
+            sites
+          </Text>
+        </Box>
+
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid green"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>3000+ tons of waste</strong>
+            removed from two open drains
+          </Text>
+        </Box>
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid orange"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong> 150+ </strong>
+            technologies displayed on portal
+          </Text>
+        </Box>
+        <Box
+          boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          p={10}
+          borderRadius={"10px"}
+          border="2px solid green"
+          h={"150px"}
+        >
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>3000+ tons</strong>
+            of waste removed from two open drains
+          </Text>
+        </Box>
+
+        <Box>
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>64+</strong>
+            policies & guidelines on portal
+          </Text>
+        </Box>
+
+        <Box>
+          <Text fontSize={{ md: "xl", lg: "2xl" }}>
+            <strong>3.1 lakh+</strong>
+            citizens sensitized in waste management
+          </Text>
+        </Box>
+
+        <Box>
+          <Text fontSize={"2xl"}>
+            <strong>450 SSF</strong>
+            fellows engaged across the country
+          </Text>
+        </Box>
       </Box>
     </Box>
   );

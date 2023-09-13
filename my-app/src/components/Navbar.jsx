@@ -15,6 +15,7 @@ const Navbar = () => {
       position={"sticky"}
       top={0}
       color={"white"}
+      zIndex={1}
     >
       <Image src={Logo} />
       <Spacer />
@@ -22,7 +23,7 @@ const Navbar = () => {
         <Text as={"b"} fontSize={"lg"} onClick={() => navigate("/")}>
           About
         </Text>
-        <Text as={"b"} fontSize={"lg"} onClick={() => navigate("")}>
+        <Text as={"b"} fontSize={"lg"} onClick={() => navigate("/technologyDep")}>
           Technology
         </Text>
         <Text as={"b"} fontSize={"lg"} onClick={() => navigate("")}>

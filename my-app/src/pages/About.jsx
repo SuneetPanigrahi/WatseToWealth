@@ -5,6 +5,7 @@ import Vision from "../components/About/Vision";
 import Focus from "../components/About/Focus";
 import Highlights from "./Highlights";
 import TechnologyDeployments from "./TechnologyDeployments";
+import Team from "./Team";
 
 const About = () => {
   return (
@@ -39,17 +40,25 @@ const About = () => {
         justifyContent={"center"}
         mt={5}
       >
-        <ReactPlayer
-          url="https://youtu.be/-dFtR0sGqmM"
-          controls={true}
+        <Box
           width="50%"
-          height="400px"
-        />
+          border="2px solid black"
+          borderRadius={"10px"}
+          overflow={"hidden"}
+        >
+          <ReactPlayer
+            url="https://youtu.be/-dFtR0sGqmM"
+            controls={true}
+            height="400px"
+            width="100%"
+          />
+        </Box>
       </Box>
       <Vision />
       <Focus />
       <Highlights />
       <TechnologyDeployments />
+      <Team />
     </Box>
   );
 };

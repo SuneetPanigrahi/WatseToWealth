@@ -99,12 +99,20 @@ const DecentralizedWaste = () => {
                 justifyContent={"center"}
                 mt={5}
               >
-                <ReactPlayer
-                  url={data.video}
-                  controls={true}
+                <Box
                   width="50%"
                   height="400px"
-                />
+                  border="2px solid black"
+                  borderRadius={"10px"}
+                  overflow={"hidden"}
+                >
+                  <iframe
+                    src={data.video}
+                    width="100%"
+                    height="400px"
+                    allow="autoplay"
+                  ></iframe>
+                </Box>
               </Box>
             </ListItem>
           ))}
